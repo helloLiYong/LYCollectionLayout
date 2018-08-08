@@ -1,0 +1,6 @@
+framework module LY_CollectionLayout {
+  umbrella header "LY_CollectionLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_LY_CollectionLayout_Example {
+  umbrella header "Pods-LY_CollectionLayout_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

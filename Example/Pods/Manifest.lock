@@ -1,0 +1,30 @@
+PODS:
+  - LY_CollectionLayout (0.0.1):
+    - LY_tool/LY_Category
+  - LY_tool/LY_Category (0.0.3)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - LY_CollectionLayout (from `../`)
+  - LY_tool/LY_Category
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LY_tool
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  LY_CollectionLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LY_CollectionLayout: af309ac9dad0335738d9e90afb4d1f0b9ea7ca26
+  LY_tool: 3ee6a9c383cd7c9a442b5c29e581faa4c19ab507
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 8ab2830605459789023fffd5f1319b429d934fad
+
+COCOAPODS: 1.5.3

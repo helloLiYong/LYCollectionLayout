@@ -1,11 +1,9 @@
+
 use_frameworks!
 
 target 'LY_CollectionLayout_Example' do
-  pod 'LY_CollectionLayout', :path => '../'
+ pod 'LY_CollectionLayout', :path => '../'
 
-  target 'LY_CollectionLayout_Tests' do
-    inherit! :search_paths
-
-    
-  end
+pod 'LY_tool/LY_Category'
+pod 'SDWebImage'
 end

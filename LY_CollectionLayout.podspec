@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LY_CollectionLayout'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LY_CollectionLayout.'
+  s.version          = '0.0.1'
+  s.summary          = 'A short'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+自定义布局框架，自定义添加图片
                        DESC
 
-  s.homepage         = 'https://github.com/895825110@qq.com/LY_CollectionLayout'
+  s.homepage         = 'https://github.com/helloLiYong/LY_CollectionLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '895825110@qq.com' => '895825110@qq.com' }
-  s.source           = { :git => 'https://github.com/895825110@qq.com/LY_CollectionLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/helloLiYong/LY_CollectionLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LY_CollectionLayout/Classes/**/*'
   
@@ -39,4 +39,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'LY_tool/LY_Category'
+
 end
