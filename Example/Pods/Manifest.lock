@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LY_CollectionLayout: af309ac9dad0335738d9e90afb4d1f0b9ea7ca26
+  LY_CollectionLayout: 06c7e388e862cf9d13e84afad10451f6f621a772
   LY_tool: 3ee6a9c383cd7c9a442b5c29e581faa4c19ab507
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 

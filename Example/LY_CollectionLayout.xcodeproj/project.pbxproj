@@ -69,7 +69,7 @@
 		B12A77EA21196ACC002EB667 /* LYLoadLocalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYLoadLocalController.m; sourceTree = "<group>"; };
 		BA8DCC19C494058AD8BA360A /* Pods_LY_CollectionLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LY_CollectionLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF54A25829E99CBB19075345 /* Pods_LY_CollectionLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LY_CollectionLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1909C6ED1A4705FB63E16DF /* LY_CollectionLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LY_CollectionLayout.podspec; path = ../LY_CollectionLayout.podspec; sourceTree = "<group>"; };
+		C1909C6ED1A4705FB63E16DF /* LY_CollectionLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LY_CollectionLayout.podspec; path = ../LY_CollectionLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

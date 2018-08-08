@@ -21,7 +21,11 @@
         UIButton *deleButton = [[UIButton alloc]init];
         self.deleButton = deleButton;
         [deleButton addTarget:self action:@selector(deleClick) forControlEvents:(UIControlEventTouchUpInside)];
-        [deleButton setBackgroundImage:[UIImage imageNamed:@"delete"] forState:(UIControlStateNormal)];
+
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSString *bundle = [currentBundle.infoDictionary[@"CFBundleName"] stringByAppendingString:@".bundle"];
+        NSString *path = [currentBundle pathForResource:@"delete@3x.png" ofType:nil inDirectory:bundle];
+        [deleButton setBackgroundImage:[UIImage imageWithContentsOfFile:path] forState:(UIControlStateNormal)];
         [imageView addSubview:deleButton];
 
         [self addSubview:imageView];
@@ -34,7 +38,10 @@
     _image = image;
     if (self.isAdd) {
         if (image == nil) {
-            self.imageView.image = [UIImage imageNamed:@"addImage"];
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *bundle = [currentBundle.infoDictionary[@"CFBundleName"] stringByAppendingString:@".bundle"];
+            NSString *path = [currentBundle pathForResource:@"addImage@3x.png" ofType:nil inDirectory:bundle];
+            self.imageView.image = [UIImage imageWithContentsOfFile:path];
             self.deleButton.hidden = YES;
             UITapGestureRecognizer *addClickTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addClick)];
             [self.imageView addGestureRecognizer:addClickTap];

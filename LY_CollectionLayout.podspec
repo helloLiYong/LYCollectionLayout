@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LY_CollectionLayout'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'A short'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LY_CollectionLayout/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LY_CollectionLayout' => ['LY_CollectionLayout/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'LY_CollectionLayout' => ['LY_CollectionLayout/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

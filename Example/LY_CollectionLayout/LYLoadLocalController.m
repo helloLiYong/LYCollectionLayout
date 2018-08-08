@@ -44,7 +44,7 @@
         layout.colomnCountBlock(4).coloumMargeBlock(10).layoutEdgeInset(UIEdgeInsetsMake(10, 10, 10, 5)).rowMargeBlock(10);
     }];
     layout.delegate = self;
-    LYAddPicCollectionView *collectionView = [[LYAddPicCollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout isAdd:NO];
+    LYAddPicCollectionView *collectionView = [[LYAddPicCollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout isAdd:YES];
     self.collectionView = collectionView;
     collectionView.backgroundColor = [UIColor redColor];
     collectionView.imageArray = self.imageArray;
