@@ -63,9 +63,9 @@ static NSString *_cellID = @"INSAddPicView";
     if (self.isAdd) {
         if (self.imageUrls.count > 0) {
             if (indexPath.item < self.imageUrls.count) {
-                cell.image =  self.imageUrls[indexPath.item];
+                cell.imageUrl =  self.imageUrls[indexPath.item];
             }else{
-                cell.image = nil;
+                cell.imageUrl = nil;
             }
         }else{
             if (indexPath.item < self.imageArray.count) {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LY_CollectionLayout'
-  s.version          = '0.0.3'
+  s.version          = '0.0.5'
   s.summary          = 'A short'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 自定义布局框架，自定义添加图片
                        DESC
 
-  s.homepage         = 'https://github.com/helloLiYong/LY_CollectionLayout'
+  s.homepage         = 'https://github.com/helloLiYong/LYCollectionLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '895825110@qq.com' => '895825110@qq.com' }
-  s.source           = { :git => 'https://github.com/helloLiYong/LY_CollectionLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/helloLiYong/LYCollectionLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

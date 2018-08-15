@@ -29,7 +29,6 @@
         [imageView addSubview:deleButton];
 
         [self addSubview:imageView];
-        [self addSubview:imageView];
     }
 
     return self;
@@ -60,19 +59,40 @@
 }
 -(void)setImageUrl:(NSString *)imageUrl{
     _imageUrl = imageUrl;
+
     if (self.isAdd) {
 
-        self.deleButton.hidden = NO;
+
+        if (imageUrl) {
+            self.deleButton.hidden = NO;
+
+            if (self.imageViewDownLoadBlock) {
+                self.imageViewDownLoadBlock(self.imageView, imageUrl);
+            }
+            UITapGestureRecognizer *addClickTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageUrlshow)];
+            [self.imageView addGestureRecognizer:addClickTap];
+        }else{
+            self.deleButton.hidden = YES;
+            NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+            NSString *bundle = [currentBundle.infoDictionary[@"CFBundleName"] stringByAppendingString:@".bundle"];
+            NSString *path = [currentBundle pathForResource:@"addImage@3x.png" ofType:nil inDirectory:bundle];
+            self.imageView.image = [UIImage imageWithContentsOfFile:path];
+
+            UITapGestureRecognizer *addClickTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addClick)];
+            [self.imageView addGestureRecognizer:addClickTap];
+        }
 
     }else{
         self.deleButton.hidden = YES;
+        if (self.imageViewDownLoadBlock) {
+            self.imageViewDownLoadBlock(self.imageView, imageUrl);
+        }
+        UITapGestureRecognizer *addClickTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageUrlshow)];
+        [self.imageView addGestureRecognizer:addClickTap];
     }
-    UITapGestureRecognizer *addClickTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageUrlshow)];
-    [self.imageView addGestureRecognizer:addClickTap];
 
-    if (self.imageViewDownLoadBlock) {
-        self.imageViewDownLoadBlock(self.imageView, imageUrl);
-    }
+
+
 }
 -(void)addClick{
     NSLog(@"点击了添加图片按钮---请监听名称为KAddPicClickAddNoti的通知");

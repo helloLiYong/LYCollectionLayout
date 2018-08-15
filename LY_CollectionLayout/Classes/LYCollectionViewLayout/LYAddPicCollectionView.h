@@ -34,7 +34,6 @@
  @param frame frame
  @param layout 初始的layout
  @param isAdd 是否是添加图片策略，如果是远程url一般为NO
- @return 
  */
 -(instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout isAdd:(BOOL)isAdd;
 @end
