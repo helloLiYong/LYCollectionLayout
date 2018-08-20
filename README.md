@@ -7,7 +7,18 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+主要实现代码：
+LYAddPicViewLayout *layout = [[LYAddPicViewLayout alloc]init];
+    self.layout = layout;
+    //通过链式配置列数，行间距，列间距，四周边距。 链式配置会覆盖代理设置
+    [layout setUpConfiguration:^(LYAddPicViewLayout *layout) {
+        layout.colomnCountBlock(4).coloumMargeBlock(10).layoutEdgeInset(UIEdgeInsetsMake(10, 10, 10, 5)).rowMargeBlock(10);
+    }];
+    layout.delegate = self;
+    LYAddPicCollectionView *collectionView = [[LYAddPicCollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout isAdd:YES];
+    self.collectionView = collectionView;
+    collectionView.imageArray = self.imageArray;
+    [self.view addSubview:collectionView];
 
 ## Requirements
 
