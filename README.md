@@ -6,8 +6,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/LY_CollectionLayout.svg?style=flat)](https://cocoapods.org/pods/LY_CollectionLayout)
 
 ## Example
-
-主要实现代码：
 LYAddPicViewLayout *layout = [[LYAddPicViewLayout alloc]init];
  //通过链式配置列数，行间距，列间距，四周边距。 链式配置会覆盖代理设置
  [layout setUpConfiguration:^(LYAddPicViewLayout *layout) {
